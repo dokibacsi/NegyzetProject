@@ -43,6 +43,6 @@ public class Negyzet
     
     @Override public String toString()
     {
-        return String.format("Oldalhossz: %d\nKoordináták: x = %d, y = %d\nTerület: %d", oldalhossz, koordinatak.getX(), koordinatak.getY(), oldalhossz * oldalhossz);
+        return String.format("Oldalhossz: %d\nKoordináták: %s\nTerület: %d", oldalhossz, koordinatak, oldalhossz * oldalhossz);
     }
 }
