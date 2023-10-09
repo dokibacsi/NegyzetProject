@@ -1,13 +1,13 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
 package alakzat;
 
-/**
- *
- * @author keresztes.hunor
- */
-public class Negyzet {
+public class Negyzet
+{
+    int oldalhossz = 5;
+    int xKoord = 1;
+    int yKoord = 2;
     
+    @Override public String toString()
+    {
+        return String.format("Oldalhossz: %d\nKoordináták: x = %d, y = %d\nTerület: %d", oldalhossz, xKoord, yKoord, oldalhossz * oldalhossz);
+    }
 }
