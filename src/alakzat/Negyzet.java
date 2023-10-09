@@ -8,8 +8,8 @@ public class Negyzet
     
     public Negyzet(int oldalhossz, Koordinatak koordinatak)
     {
-        this.oldalhossz = oldalhossz;
-        this.koordinatak = koordinatak;
+        setOldalhossz(oldalhossz);
+        setKoordinatak(koordinatak);
     }
     
     public int getOldalhossz()
