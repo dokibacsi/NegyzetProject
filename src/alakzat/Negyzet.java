@@ -1,5 +1,7 @@
 package alakzat;
 
+import java.util.Objects;
+
 public class Negyzet
 {
     private int oldalhossz;
@@ -34,6 +36,14 @@ public class Negyzet
     public void setKoordinatak(Koordinatak koordinatak)
     {
         this.koordinatak = koordinatak;
+    }
+
+    @Override public int hashCode()
+    {
+        int hash = 3;
+        hash = 59 * hash + this.oldalhossz;
+        hash = 59 * hash + Objects.hashCode(this.koordinatak);
+        return hash;
     }
 
     @Override public boolean equals(Object obj)
