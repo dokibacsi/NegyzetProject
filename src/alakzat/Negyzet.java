@@ -2,12 +2,36 @@ package alakzat;
 
 public class Negyzet
 {
-    private int oldalhossz = 5;
-    private int xKoord = 1;
-    private int yKoord = 2;
+    private int oldalhossz;
+    
+    private Koordinatak koordinatak;
+    
+    public int getOldalhossz()
+    {
+        return oldalhossz;
+    }
+
+    public void setOldalhossz(int oldalhossz)
+    {
+        if (oldalhossz <= 0)
+        {
+            oldalhossz = 1;
+        }
+        this.oldalhossz = oldalhossz;
+    }
+
+    public Koordinatak getKoordinatak()
+    {
+        return koordinatak;
+    }
+
+    public void setKoordinatak(Koordinatak koordinatak)
+    {
+        this.koordinatak = koordinatak;
+    }
     
     @Override public String toString()
     {
-        return String.format("Oldalhossz: %d\nKoordináták: x = %d, y = %d\nTerület: %d", oldalhossz, xKoord, yKoord, oldalhossz * oldalhossz);
+        return String.format("Oldalhossz: %d\nKoordináták: x = %d, y = %d\nTerület: %d", oldalhossz, koordinatak.getX(), koordinatak.getY(), oldalhossz * oldalhossz);
     }
 }
