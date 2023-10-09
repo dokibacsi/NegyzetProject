@@ -36,6 +36,11 @@ public class Negyzet
         this.koordinatak = koordinatak;
     }
     
+    public boolean osszehasonlit(Negyzet masik)
+    {
+        return oldalhossz == masik.getOldalhossz();
+    }
+    
     @Override public String toString()
     {
         return String.format("Oldalhossz: %d\nKoordináták: x = %d, y = %d\nTerület: %d", oldalhossz, koordinatak.getX(), koordinatak.getY(), oldalhossz * oldalhossz);
