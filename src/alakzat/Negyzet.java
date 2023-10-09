@@ -2,9 +2,9 @@ package alakzat;
 
 public class Negyzet
 {
-    int oldalhossz = 5;
-    int xKoord = 1;
-    int yKoord = 2;
+    private int oldalhossz = 5;
+    private int xKoord = 1;
+    private int yKoord = 2;
     
     @Override public String toString()
     {
