@@ -35,10 +35,10 @@ public class Negyzet
     {
         this.koordinatak = koordinatak;
     }
-    
-    public boolean osszehasonlit(Negyzet masik)
+
+    @Override public boolean equals(Object obj)
     {
-        return oldalhossz == masik.getOldalhossz();
+        return obj instanceof Negyzet masik ? oldalhossz == masik.getOldalhossz() : false;
     }
     
     @Override public String toString()
