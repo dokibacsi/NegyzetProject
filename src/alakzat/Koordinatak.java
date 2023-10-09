@@ -4,6 +4,12 @@ public class Koordinatak
 {
     private int x;
     private int y;
+    
+    public Koordinatak(int x, int y)
+    {
+        this.x = x;
+        this.y = y;
+    }
 
     public int getX()
     {

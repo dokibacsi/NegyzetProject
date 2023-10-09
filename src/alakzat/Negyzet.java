@@ -6,6 +6,12 @@ public class Negyzet
     
     private Koordinatak koordinatak;
     
+    public Negyzet(int oldalhossz, Koordinatak koordinatak)
+    {
+        this.oldalhossz = oldalhossz;
+        this.koordinatak = koordinatak;
+    }
+    
     public int getOldalhossz()
     {
         return oldalhossz;

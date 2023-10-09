@@ -9,12 +9,7 @@ public class Alakzat
     
     private void feladat()
     {
-        Negyzet n = new Negyzet();
-        n.setOldalhossz(5);
-        Koordinatak k = new Koordinatak();
-        k.setX(1);
-        k.setY(2);
-        n.setKoordinatak(k);
+        Negyzet n = new Negyzet(5, new Koordinatak(1, 2));
         System.out.println(n);
     }
 }
